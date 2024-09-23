@@ -29,7 +29,7 @@ class Agent2xController {
     fun intermediate() {
         logger.info("intermediate")
         RestClient.builder()
-            .baseUrl("http://localhost:8080/done")
+            .baseUrl("http://demo-tracing:8080/done")
             .build()
             .get()
             .header("X-done", "true")

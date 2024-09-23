@@ -28,7 +28,7 @@ class Agent1xController {
     fun intermediate() {
         logger.info("intermediate")
         RestClient.builder()
-            .baseUrl("http://localhost:8080/done")
+            .baseUrl("http://micrometer-tracing:8080/done")
             .build()
             .get()
             .header("X-done", "true")
